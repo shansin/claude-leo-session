@@ -2,6 +2,8 @@
 
 Claude Code hooks for WhatsApp integration via named FIFOs. Allows a WhatsApp bot to send messages into a running Claude Code session and receive responses back.
 
+ref: https://github.com/shansin/whatsapp-leo
+
 ## How it works
 
 The integration uses two named FIFOs (named pipes) to bridge WhatsApp and a Claude Code session running inside tmux:
@@ -36,7 +38,7 @@ Claude Code   ──hook──▶   hook_stop.sh  ──write──▶  FIFO_OUT
 ## Installation
 
 ```bash
-git clone <repo-url>
+git clone https://github.com/shansin/claude-leo-session.git
 cd claude-leo-session
 bash install.sh
 ```
